@@ -30,7 +30,7 @@ gsap.to(airpods, {
   snap: "frame",
   scrollTrigger: {
     scrub: 0.5,
-    markers:true
+    // markers:true
   },
   onUpdate: render, // use animation onUpdate instead of scrollTrigger's onUpdate
 });
@@ -53,7 +53,7 @@ gsap.fromTo('.banner-fv-down', {y:-50}, {duration:2, y:-10})
 
 gsap.to('.scroll-hide-one', {
   scrollTrigger: {
-    markers: true,
+    // markers: true,
     trigger: '.sub-banner',
     start: 'top top' ,
     end: 'center center',
@@ -64,7 +64,7 @@ gsap.to('.scroll-hide-one', {
 
 gsap.to('.banner-heading', {
   scrollTrigger: {
-    markers: true,
+    // markers: true,
     trigger: '.banner',
     start: 'top top' ,
     end: 'center center',
@@ -77,10 +77,11 @@ gsap.to('.banner-heading', {
 
 gsap.to('.banner-rebuilt', {
   scrollTrigger: {
-    markers: true,
+    // markers: true,
     trigger: '.banner',
     start:'center center',
     scrub:0.5
   },
-  opacity:1
+  opacity:1,
+  scale:1.2
 })
