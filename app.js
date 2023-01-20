@@ -62,7 +62,7 @@ gsap.to('.scroll-hide-one', {
   opacity:0
 })
 
-gsap.to('.banner-heading', {
+gsap.fromTo('.banner-heading',{scale:1}, {
   scrollTrigger: {
     // markers: true,
     trigger: '.banner',
@@ -71,7 +71,7 @@ gsap.to('.banner-heading', {
     scrub:0.1
   },
   opacity:0,
-  scale:1.0
+  scale:1.2
 })
 
 
