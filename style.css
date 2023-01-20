@@ -111,14 +111,14 @@ a {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    margin: 5rem 0;
+    margin-top: 5rem;
     position: relative;
     height: 250vh;
 }
 
 .sub-banner {
     position: sticky;
-    top: 120px;
+    top: 200px;
 }
 
 .banner .an {
