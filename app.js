@@ -48,19 +48,8 @@ gsap.fromTo('.banner-fv', {scale:0.7}, {duration:2, scale:1})
 
 gsap.fromTo('.banner-fv-up', {y:10}, {duration:2, y:-10})
 
-gsap.to('.banner-fv-down', {duration:2, y:100})
+gsap.fromTo('.banner-fv-down', {y:-50}, {duration:2, y:-10})
 
-
-// gsap.to('.rebuilt-wrapper', {
-//   scrollTrigger: {
-//     trigger:'.banner-rebuilt',
-//     scrub:0.5,
-//     markers:true,
-//     start:'top center',
-//     end:'center center'
-//   },
-//   opacity:1
-// })
 
 gsap.to('.scroll-hide-one', {
   scrollTrigger: {
@@ -83,4 +72,15 @@ gsap.to('.banner-heading', {
   },
   opacity:0,
   scale:1.0
+})
+
+
+gsap.to('.banner-rebuilt', {
+  scrollTrigger: {
+    markers: true,
+    trigger: '.banner',
+    start:'center center',
+    scrub:0.5
+  },
+  opacity:1
 })

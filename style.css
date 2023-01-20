@@ -16,7 +16,7 @@
 
 body {
     color: var(--color-white);
-    height: 300vh;
+    /* height: 300vh; */
     background: black;
     max-width: 100vw;
 }
@@ -119,7 +119,6 @@ a {
 .sub-banner {
     position: sticky;
     top: 120px;
-    height: 200vh;
 }
 
 .banner .an {
@@ -166,7 +165,8 @@ canvas {
 .banner-rebuilt {
     font-size: 6vw;
     position: relative;
-    top: -10%;
+    top: -40%;
+    opacity: 0;
 }
 
 @media screen and (max-width:930px) {
@@ -185,5 +185,19 @@ canvas {
 
     .header-items-mobile {
         display: flex;
+    }
+}
+
+.br {
+    display: none;
+}
+
+@media screen and (max-width:750px) {
+    canvas {
+        top: 5%;
+    }
+
+    .br {
+        display: block;
     }
 }
