@@ -44,7 +44,7 @@ function render() {
 
 gsap.fromTo('.banner', {opacity: 0}, {duration:2, opacity:1})
 
-gsap.fromTo('.banner-fv', {scale:0.7}, {duration:2, scale:1})
+gsap.fromTo('.banner-fv', {scale:0.7}, {duration:2, scale:1.1})
 
 gsap.fromTo('.banner-fv-up', {y:10}, {duration:2, y:-10})
 
@@ -62,7 +62,7 @@ gsap.to('.scroll-hide-one', {
   opacity:0
 })
 
-gsap.fromTo('.banner-heading',{scale:1}, {
+gsap.fromTo('.banner-heading',{scale:1.1}, {
   scrollTrigger: {
     // markers: true,
     trigger: '.banner',
@@ -71,7 +71,7 @@ gsap.fromTo('.banner-heading',{scale:1}, {
     scrub:0.1
   },
   opacity:0,
-  scale:1.2
+  scale:1.23
 })
 
 
