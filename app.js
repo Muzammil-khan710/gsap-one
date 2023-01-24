@@ -42,13 +42,13 @@ function render() {
   context.drawImage(images[airpods.frame], 0, 0);
 }
 
-gsap.fromTo('.banner', {opacity: 0}, {duration:2, opacity:1})
+gsap.fromTo('.banner', {opacity: 0}, {duration:1.8, opacity:1})
 
-gsap.fromTo('.banner-fv', {scale:0.7}, {duration:2, scale:1.1})
+gsap.fromTo('.banner-fv', {scale:0.7}, {duration:1.8, scale:1})
 
-gsap.fromTo('.banner-fv-up', {y:10}, {duration:2, y:-10})
+gsap.fromTo('.banner-fv-up', {y:50}, {duration:1.8, y:30})
 
-gsap.fromTo('.banner-fv-down', {y:-50}, {duration:2, y:-10})
+gsap.fromTo('.banner-fv-down', {y:-150}, {duration:1.8, y:-80})
 
 
 gsap.to('.scroll-hide-one', {
@@ -62,7 +62,7 @@ gsap.to('.scroll-hide-one', {
   opacity:0
 })
 
-gsap.fromTo('.banner-heading',{scale:1.1}, {
+gsap.fromTo('.banner-heading',{scale:1}, {
   scrollTrigger: {
     // markers: true,
     trigger: '.banner',
